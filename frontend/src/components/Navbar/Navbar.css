@@ -99,8 +99,8 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 .navbar__logo-img {
-  height: 25px !important;
-  width: 25px !important;
+  height: 200px !important;
+  width: 200px !important;
   object-fit: contain !important;
   display: block;
   }

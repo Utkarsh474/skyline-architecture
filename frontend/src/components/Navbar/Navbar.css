@@ -124,9 +124,9 @@
   }
 
   .navbar__logo-img {
-  height: 45px !important;
-  width: 45px !important;
-  object-fit: contain !important;
+  height: 45px ;
+  width: 45px ;
+  object-fit: contain ;
   display: block;
   }
 }

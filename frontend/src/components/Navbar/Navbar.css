@@ -98,6 +98,12 @@
 .navbar__hamburger.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+.navbar__logo-img {
+  height: 25px !important;
+  width: 25px !important;
+  object-fit: contain !important;
+  display: block;
+  }
 
 @media (max-width: 768px) {
   .navbar__hamburger {
@@ -123,10 +129,5 @@
     right: 0;
   }
 
-  .navbar__logo-img {
-  height: 25px !important;
-  width: 25px !important;
-  object-fit: contain !important;
-  display: block;
-  }
+  
 }

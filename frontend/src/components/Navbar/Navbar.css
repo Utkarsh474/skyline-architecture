@@ -1,5 +1,5 @@
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -124,8 +124,8 @@
   }
 
   .navbar__logo-img {
-  height: 45px !important;
-  width: 45px !important;
+  height: 25px !important;
+  width: 25px !important;
   object-fit: contain !important;
   display: block;
   }

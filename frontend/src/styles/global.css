@@ -1,0 +1,123 @@
+:root {
+  --c-primary:       #c9a84c;   /* Gold — buttons, accents, underlines        */
+  --c-primary-dark:  #a8863a;   /* Darker gold — hover states                 */
+  --c-bg:            #0a0a0a;   /* Near black — main page background          */
+  --c-bg-light:      #111111;   /* Slightly lighter black — alternate sections */
+  --c-surface:       #1a1a1a;   /* Cards, navbar background                   */
+  --c-text:          #f5f5f5;   /* Main text — off white                      */
+  --c-text-muted:    #a0a0a0;   /* Secondary text — grey                      */
+  --c-border:        #2a2a2a;   /* Dividers, card borders                     */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  font-family: 'Georgia', serif;
+}
+
+/* ── Shared Utility Classes ── */
+
+.btn-main {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: var(--c-primary);
+  color: #0a0a0a;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-main:hover {
+  background-color: var(--c-primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 13px 36px;
+  background-color: transparent;
+  color: var(--c-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: 2px solid var(--c-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: var(--c-primary);
+  color: #0a0a0a;
+}
+
+.section-padding {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--c-text);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--c-primary);
+  margin: 12px auto 0;
+}
+
+.description-text {
+  font-size: 1.05rem;
+  color: var(--c-text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+
+.bg-light {
+  background-color: var(--c-bg-light);
+}
+
+/* ── Scroll Reveal ── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

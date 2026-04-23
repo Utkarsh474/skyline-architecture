@@ -1,0 +1,37 @@
+.stats {
+  background-color: var(--c-primary);
+  padding: 60px 10%;
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.stats__number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.stats__label {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  opacity: 0.8;
+}
+
+.stats__grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+.stats__grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+.stats__grid .reveal:nth-child(4) { transition-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

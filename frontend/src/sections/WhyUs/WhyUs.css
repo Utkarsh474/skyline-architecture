@@ -1,0 +1,50 @@
+.whyus__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.whyus__card {
+  background-color: var(--c-surface);
+  border: 1px solid var(--c-border);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.whyus__card:hover {
+  border-color: var(--c-primary);
+  transform: translateY(-6px);
+}
+
+.whyus__icon {
+  font-size: 2.2rem;
+}
+
+.whyus__title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--c-text);
+}
+
+.whyus__desc {
+  font-size: 0.95rem;
+  color: var(--c-text-muted);
+  line-height: 1.8;
+}
+
+.whyus__grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+.whyus__grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+.whyus__grid .reveal:nth-child(4) { transition-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .whyus__grid {
+    grid-template-columns: 1fr;
+  }
+}

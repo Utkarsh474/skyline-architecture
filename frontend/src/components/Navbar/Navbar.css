@@ -100,7 +100,7 @@
 }
 .navbar__logo-img {
   height: auto ;
-  width: clamp(150px, 10vw, 200px) ;
+  width: clamp(80px, 10vw, 200px) ;
   object-fit: contain ;
   display: block;
   }
